@@ -1,19 +1,17 @@
+{% extends "web/base.html" %}
 {% load static %}
-<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Solusrex Sebastian Christoph</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" media="screen">
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicons/apple-touch-icon.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicons/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicons/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'img/favicons/site.webmanifest' %}">
-  </head>
-  <body>
-    <div class="main-container">
-      <img src="{% static 'img/logo.png' %}" alt="Solusrex Sebastian Christoph" class="responsive-img">
-    </div>
-  </body>
-</html>
+
+{% block content %}
+  <section class="home-layout" aria-label="Startseite">
+    <img src="{% static 'img/logo.png' %}" alt="Solusrex Sebastian Christoph" class="home-logo">
+
+    <nav class="tile-grid" aria-label="Bereiche">
+      <a class="nav-tile" href="{% url 'verlag' %}">
+        <span>Verlag</span>
+      </a>
+      <a class="nav-tile" href="{% url 'shops' %}">
+        <span>Shops</span>
+      </a>
+    </nav>
+  </section>
+{% endblock %}

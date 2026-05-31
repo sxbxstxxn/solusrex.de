@@ -1,0 +1,24 @@
+{% load static %}
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Solusrex Sebastian Christoph{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" media="screen">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/favicons/site.webmanifest' %}">
+  </head>
+  <body>
+    <div class="site-shell">
+      <main class="site-main">
+        {% block content %}{% endblock %}
+      </main>
+      <footer class="site-footer">
+        <a href="{% url 'impressum' %}">Impressum</a>
+      </footer>
+    </div>
+  </body>
+</html>
