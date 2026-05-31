@@ -1,0 +1,21 @@
+body {
+    background-color: #101113;
+    margin: 0;
+}
+
+/* Container, der den gesamten Bildschirm ausfuellt */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+/* Responsives Bild */
+.responsive-img {
+    max-width: 90%;
+    max-height: 90vh;
+    height: auto;
+}
