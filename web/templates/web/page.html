@@ -1,10 +1,12 @@
 {% extends "web/base.html" %}
+{% load static %}
 
 {% block title %}{{ title }} | Solusrex Sebastian Christoph{% endblock %}
 
 {% block content %}
   <section class="page-layout">
+    <img src="{% static 'img/logo.png' %}" alt="Solusrex Sebastian Christoph" class="page-logo">
     <h1>{{ title }}</h1>
-    <p>Inhalte noch nicht vorhanden. Sie folgen in Kürze.</p>
+    <p>Diese Inhalte werden derzeit redaktionell erarbeitet und stehen Ihnen in Kürze zur Verfügung</p>
   </section>
 {% endblock %}

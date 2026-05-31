@@ -28,7 +28,7 @@ class HomePageTests(SimpleTestCase):
                 self.assertContains(response, "Emsdettener Straße 10")
                 self.assertContains(
                     response,
-                    "Inhalte noch nicht vorhanden. Sie folgen in Kürze.",
+                    "Diese Inhalte werden derzeit redaktionell erarbeitet und stehen Ihnen in Kürze zur Verfügung",
                 )
 
     def test_impressum_page_is_removed(self):
