@@ -19,7 +19,7 @@ Die Seite ist danach unter http://127.0.0.1:8000 erreichbar.
 docker compose up --build
 ```
 
-Die Seite ist danach unter http://localhost:8000 erreichbar.
+Die Seite ist danach unter http://localhost:8002 erreichbar.
 
 ## Wichtige Umgebungsvariablen
 
