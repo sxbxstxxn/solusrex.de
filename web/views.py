@@ -11,7 +11,3 @@ def verlag(request):
 
 def shops(request):
     return render(request, "web/page.html", {"title": "Shops"})
-
-
-def impressum(request):
-    return render(request, "web/page.html", {"title": "Impressum"})

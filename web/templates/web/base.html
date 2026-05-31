@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Solusrex Sebastian Christoph{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" media="screen">
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicons/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicons/favicon-32x32.png' %}">
@@ -17,7 +20,12 @@
         {% block content %}{% endblock %}
       </main>
       <footer class="site-footer">
-        <a href="{% url 'impressum' %}">Impressum</a>
+        <address>
+          Sebastian Christoph<br>
+          c/o POSTFLEX PFX-796-792<br>
+          Emsdettener Straße 10<br>
+          48268 Greven
+        </address>
       </footer>
     </div>
   </body>
