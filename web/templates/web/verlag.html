@@ -1,0 +1,41 @@
+{% extends "web/base.html" %}
+{% load static %}
+
+{% block title %}Verlag | Solusrex Sebastian Christoph{% endblock %}
+
+{% block content %}
+  <section class="page-layout">
+    <img src="{% static 'img/logo.png' %}" alt="Solusrex Sebastian Christoph" class="page-logo">
+    <h1>Verlag</h1>
+
+    <div class="book-grid" aria-label="Veröffentlichte Bücher">
+      <a class="book-tile" href="https://www.amazon.de/dp/B0H37M8CDG" target="_blank" rel="noopener noreferrer" aria-label="Nur ich und die Welt bei Amazon öffnen">
+        <img class="book-cover" src="{% static 'img/nur-ich-und-die-welt.jpg' %}" alt="Cover von Nur ich und die Welt">
+        <div class="book-content">
+          <p class="book-kicker">Simon Ryberg</p>
+          <h2>Nur ich und die Welt</h2>
+          <p class="book-description">
+            Ein Solo-Travel-Journal und persönlicher Guide für die erste Reise allein:
+            mit Reflexionsseiten, Reisetipps und Platz für Erinnerungen.
+          </p>
+          <span class="book-action">Bei Amazon ansehen</span>
+        </div>
+      </a>
+
+      <article class="book-tile book-tile-placeholder" aria-label="Weitere Veröffentlichungen folgen">
+        <div class="book-cover-placeholder" aria-hidden="true">
+          <span class="material-symbols-outlined">auto_stories</span>
+        </div>
+        <div class="book-content">
+          <p class="book-kicker">Solusrex Verlag</p>
+          <h2>Weitere Titel folgen</h2>
+          <p class="book-description">
+            Neue Projekte entstehen Schritt für Schritt. Weitere Titel erscheinen hier
+            mit Cover, Kurzinfo und direktem Link zur Veröffentlichung.
+          </p>
+          <span class="book-action">Demnächst verfügbar</span>
+        </div>
+      </article>
+    </div>
+  </section>
+{% endblock %}

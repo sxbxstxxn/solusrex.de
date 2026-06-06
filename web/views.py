@@ -6,7 +6,7 @@ def index(request):
 
 
 def verlag(request):
-    return render(request, "web/page.html", {"title": "Verlag"})
+    return render(request, "web/verlag.html")
 
 
 def shops(request):
